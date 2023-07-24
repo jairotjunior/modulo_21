@@ -1,5 +1,39 @@
-$bgColor: rgb(255, 0, 0);
+@use 'variaveis';
+@use 'colecao';
+@use 'historia';
 
-body{
-    background-color: $bgColor;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteudo{
+    padding: 3%;
+    min-height: 100vh;
+    background: url(/images/fanart.jpg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @media screen and (max-width: 1101px){
+        padding: 4%;
+        background: url(/images/turma_ToyStory.jpeg) fixed;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .7;
+        content: '';
+    }
 }

@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="dist/main.css">
+    <title>Filme Favorito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/styles/main.css">
 </head>
 <body>
-    <h1>Filme</h1>
+    <div class="conteudo">
+        <section class="apresentacao">
+            <img class="apresentacao__poster" src="/images/Poster2.jpeg" alt="">
+            <div class="apresentacao__texto">
+                <h2 class="apresentacao__texto__titulo corSecundaria">Toy Story: Um mundo de Aventuras</h2>
+                <p class="apresentacao__texto__resumo corPrimaria">Toy Story é uma série de filmes de animação da Disney-Pixar que conta a história de brinquedos que ganham vida quando os humanos não estão por perto. A franquia é composta por quatro filmes principais. Ao longo dos quatro filmes, a série Toy Story aborda temas como amizade, pertencimento, lealdade, crescimento pessoal e o significado do amor e da aceitação.</p>
+                <div class="apresentacao__texto__extras">
+                    <p class="apresentacao__texto__extras__diretor corPrimaria"><b class="corSecundaria">Diretor:</b> Josh Cooley</p>
+                    <div class="apresentacao__texto__extras__classificacao">
+                        <div class="apresentacao__texto__extras__classificacao__titulo">
+                            <p><b class="corSecundaria">Classificação:</b></p>
+                        </div>
+                        <article class="apresentacao__texto__extras__classificacao__categoria">
+                            <p class="corPrimaria">Família</p>
+                            <p class="corPrimaria">Aventura</p>
+                            <p class="corPrimaria">Animação</p>
+                            <p class="corPrimaria">Comédia</p>
+                            <p class="corPrimaria">Fantasia</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="colecao">
+            <h2 class="colecao__titulo corSecundaria ">Coleção de Filmes</h2>
+            <div  class="colecao__cards">
+                <article><img class="colecao__cards__card" src="/images/Toy_Story_1.jpg" alt=""></article>
+                <article><img class="colecao__cards__card" src="/images/Toy_Story_2.jpeg" alt=""></article>
+                <article><img class="colecao__cards__card" src="/images/Toy_Story_3.jpg" alt=""></article>
+                <article><img class="colecao__cards__card" src="/images/Toy_Story_4.jpg" alt=""></article>                
+            </div>
+        </section>
+    </div>
 </body>
 </html>
